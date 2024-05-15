@@ -100,6 +100,7 @@ const calculator = StyleSheet.create({
     borderRadius: 16,
     padding: 16,
     backgroundColor: Colors.calcDisplayBg,
+    textAlign: "right",
   },
 });
 
