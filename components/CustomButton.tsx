@@ -6,8 +6,6 @@ interface ButtonProps {
   title: string;
   icon?: any;
   style?: StyleProp<ViewStyle>;
-  width?: number;
-  height?: number;
 }
 
 export default function CustomButton({
@@ -15,14 +13,8 @@ export default function CustomButton({
   title,
   icon,
   style,
-  width,
-  height,
 }: ButtonProps) {
-  const buttonStyle = [
-    GlobalStyles.customButton.background,
-    style,
-    { width, height },
-  ];
+  const buttonStyle = [GlobalStyles.customButton.background, style];
 
   return (
     <TouchableOpacity onPress={onPress} style={buttonStyle}>
