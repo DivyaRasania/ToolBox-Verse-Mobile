@@ -90,7 +90,7 @@ export default function Todo() {
       <View style={GlobalStyles.todo.container}>
         <TextInput
           value={input}
-          style={GlobalStyles.todo.input}
+          style={[GlobalStyles.commonStyles.textField, { width: "80%" }]}
           placeholder="I need to do..."
           onChangeText={(text) => {
             setInput(text);

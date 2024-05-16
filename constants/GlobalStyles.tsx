@@ -21,6 +21,17 @@ const commonStyles = StyleSheet.create({
     padding: 20,
     textAlign: "center",
   },
+
+  textField: {
+    backgroundColor: Colors.textField,
+    color: Colors.background,
+    justifyContent: "center",
+    textAlign: "center",
+    fontSize: 18,
+    padding: 16,
+    width: "100%",
+    borderRadius: 10,
+  },
 });
 
 const customButton = StyleSheet.create({
@@ -71,15 +82,6 @@ const todo = StyleSheet.create({
   container: {
     fontSize: 24,
     flexDirection: "row",
-  },
-
-  input: {
-    backgroundColor: Colors.text,
-    color: Colors.background,
-    fontSize: 18,
-    padding: 16,
-    width: "80%",
-    borderRadius: 10,
   },
 
   text: {

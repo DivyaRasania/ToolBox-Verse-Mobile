@@ -1,6 +1,7 @@
 const Colors = {
   background: "#1a1a1a",
   text: "#cccccc",
+  textField: "#cccccc",
   btnBorder: "#cccccc",
   btnBg: "#1a1a1a",
   navBg: "#262626",
@@ -9,7 +10,6 @@ const Colors = {
   calcBg: "#262626",
   calcDisplayBg: "#333333",
   calcOperatorBg: "	#cccccc",
-  tipBg: "#999999",
 };
 
 export default Colors;

@@ -44,14 +44,19 @@ export default function Counter() {
             icon={<Icon name="north" color="white" />}
             title="+"
             onPress={add}
-            width={100}
+            style={{ width: 100 }}
           />
-          <CustomButton title="Reset" onPress={reset} width={100} />
+          <CustomButton
+            icon={<Icon name="refresh" color="white" />}
+            title="Reset"
+            onPress={reset}
+            style={{ width: 100 }}
+          />
           <CustomButton
             icon={<Icon name="south" color="white" />}
             title="-"
             onPress={subtract}
-            width={100}
+            style={{ width: 100 }}
           />
         </View>
       </View>
