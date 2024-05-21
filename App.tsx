@@ -7,6 +7,7 @@ import Counter from "./screens/Counter";
 import HexColorPicker from "./screens/HexColorPicker";
 import Todo from "./screens/Todo";
 import Calculator from "./screens/Calculator";
+import Contact from "./screens/Contact";
 
 export default function App() {
   const Drawer = createDrawerNavigator();
@@ -32,6 +33,7 @@ export default function App() {
           <Drawer.Screen name="Hex Color Picker" component={HexColorPicker} />
           <Drawer.Screen name="Todo" component={Todo} />
           <Drawer.Screen name="Calculator" component={Calculator} />
+          <Drawer.Screen name="Contact" component={Contact} />
         </Drawer.Navigator>
       </NavigationContainer>
     </>
