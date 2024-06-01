@@ -92,6 +92,7 @@ export default function Todo() {
           value={input}
           style={[GlobalStyles.commonStyles.textField, { width: "80%" }]}
           placeholder="I need to do..."
+          cursorColor={"#000"}
           onChangeText={(text) => {
             setInput(text);
           }}
@@ -110,6 +111,7 @@ export default function Todo() {
             <TextInput
               style={GlobalStyles.todo.text}
               editable={editIndex === index}
+              cursorColor={Colors.text}
               onChangeText={(text) => {
                 setEditText(text);
               }}
