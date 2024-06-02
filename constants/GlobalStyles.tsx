@@ -51,6 +51,20 @@ const customButton = StyleSheet.create({
   },
 });
 
+const calculator = StyleSheet.create({
+  display: {
+    height: 100,
+    width: "90%",
+    overflow: "hidden",
+    fontSize: 40,
+    color: Colors.text,
+    borderRadius: 16,
+    padding: 16,
+    backgroundColor: Colors.calcDisplayBg,
+    textAlign: "right",
+  },
+});
+
 const counter = StyleSheet.create({
   container: {
     fontSize: 24,
@@ -78,6 +92,15 @@ const hexColorPicker = StyleSheet.create({
   },
 });
 
+const riddles = StyleSheet.create({
+  content: {
+    color: Colors.text,
+    fontSize: 24,
+    textAlign: "left",
+    margin: 10,
+  },
+});
+
 const todo = StyleSheet.create({
   container: {
     fontSize: 24,
@@ -92,25 +115,12 @@ const todo = StyleSheet.create({
   },
 });
 
-const calculator = StyleSheet.create({
-  display: {
-    height: 100,
-    width: "90%",
-    overflow: "hidden",
-    fontSize: 40,
-    color: Colors.text,
-    borderRadius: 16,
-    padding: 16,
-    backgroundColor: Colors.calcDisplayBg,
-    textAlign: "right",
-  },
-});
-
 export default {
   commonStyles,
   customButton,
+  calculator,
   counter,
   hexColorPicker,
+  riddles,
   todo,
-  calculator,
 };
