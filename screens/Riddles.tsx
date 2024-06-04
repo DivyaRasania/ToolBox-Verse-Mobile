@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { ScrollView, Text, View } from "react-native";
 import { useEffect, useState } from "react";
 import GlobalStyles from "../constants/GlobalStyles";
 import CustomButton from "../components/CustomButton";
@@ -28,9 +28,11 @@ export default function Riddles() {
 
   return (
     <View style={GlobalStyles.commonStyles.container}>
-      <Text style={GlobalStyles.commonStyles.heading}>Riddles</Text>
+      <Text style={[GlobalStyles.commonStyles.heading, { marginTop: 15 }]}>
+        Riddles
+      </Text>
       {riddle ? (
-        <>
+        <ScrollView>
           <Text style={GlobalStyles.riddles.content}>
             Title: {riddle.title}
           </Text>
@@ -43,7 +45,7 @@ export default function Riddles() {
               { display: isAnswerVisible ? "flex" : "none" },
             ]}
           >
-            {riddle.answer}
+            Answer: {riddle.answer}
           </Text>
           <CustomButton
             title="Show Answer"
@@ -55,7 +57,7 @@ export default function Riddles() {
               fetchRiddle();
             }}
           />
-        </>
+        </ScrollView>
       ) : (
         <Text>Loading...</Text>
       )}

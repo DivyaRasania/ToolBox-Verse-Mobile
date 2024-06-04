@@ -1,34 +1,33 @@
 {
   "expo": {
     "name": "ToolBox Verse",
-    "slug": "toolbox-verse-mobile-app",
+    "slug": "toolbox-verse-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/logo.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.divyarasania.toolboxversemobile"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/logo.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.divyarasania.toolboxverse"
+      "package": "com.divyarasania.toolboxversemobile"
     },
     "web": {
       "favicon": "./assets/logo.png"
     },
-    "plugins": ["expo-font"],
     "extra": {
       "eas": {
-        "projectId": "21e3ddd5-f29d-46c6-a3ad-50ead7c1fedf"
+        "projectId": "e2d926c5-faa1-48c0-9943-f8c5a35b0930"
       }
     }
   }
